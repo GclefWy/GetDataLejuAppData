@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetDataCityHidList", "GetData01\GetDataCityHidList.csproj", "{595E791A-B659-4A8D-8FC1-D0D63C131EEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetDataFromCityAndHid", "GetData02\GetDataFromCityAndHid.csproj", "{B22F3A15-B785-4E0E-99B4-1905568CEF58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WriteLog", "WriteLog\WriteLog.csproj", "{695511C4-9E41-4B97-BFE7-743A5AA330E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{595E791A-B659-4A8D-8FC1-D0D63C131EEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{595E791A-B659-4A8D-8FC1-D0D63C131EEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{595E791A-B659-4A8D-8FC1-D0D63C131EEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{595E791A-B659-4A8D-8FC1-D0D63C131EEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B22F3A15-B785-4E0E-99B4-1905568CEF58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B22F3A15-B785-4E0E-99B4-1905568CEF58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B22F3A15-B785-4E0E-99B4-1905568CEF58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B22F3A15-B785-4E0E-99B4-1905568CEF58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{695511C4-9E41-4B97-BFE7-743A5AA330E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{695511C4-9E41-4B97-BFE7-743A5AA330E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{695511C4-9E41-4B97-BFE7-743A5AA330E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{695511C4-9E41-4B97-BFE7-743A5AA330E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
