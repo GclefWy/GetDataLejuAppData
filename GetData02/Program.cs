@@ -48,7 +48,7 @@ namespace GetDataFromCityAndHid
         static void Main(string[] args)
         {
             string sDate = DateTime.Now.AddDays(-1).ToString("yyyy-MM-dd");
-            string qSql = "select lists_hid from TB_ESTATE_LISTS_LEJUAPP";
+            string qSql = "select lists_hid,lists_city from TB_ESTATE_LISTS_LEJUAPP";
             DataSet ds = SimpleDataHelper.Query(SimpleDataHelper.MSConnectionString, qSql);
 
             for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
@@ -57,9 +57,10 @@ namespace GetDataFromCityAndHid
 
                 {
                     string hid = ds.Tables[0].Rows[i][0].ToString();
+                    string city = ds.Tables[0].Rows[i][1].ToString();
 
                     string house_statURL = @"http://mf.m.leju.com/v4/public/house_stat.json";
-                    string house_statQueryString = @"?city_en=sh&hid=" + hid + "&date=" + sDate;
+                    string house_statQueryString = @"?city_en="+ city +"&hid=" + hid + "&date=" + sDate;
 
                     string rtn = getHttp(house_statURL, house_statQueryString);
 
